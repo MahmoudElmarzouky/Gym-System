@@ -1,2 +1,9 @@
 # Gym-Management-Sysyem
-Build Gym Management Sysyem using ASP.NET Core MVC
+Build WebProject Gym Management Sysyem
+
+# CRUD Project , Coaches , Games and Trainees 
+
+# Tools
+ASP.NET Core 
+Entity framework Code First 
+SQL Server 
