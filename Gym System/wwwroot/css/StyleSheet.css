@@ -1,0 +1,9 @@
+﻿body {
+}
+.dbackground {
+	background-image: url("../Images/img-bg-01.jpg");
+	background-size: cover;
+	padding: 0px 0px 0px 0px;
+	color: white;
+	height:600px;
+}

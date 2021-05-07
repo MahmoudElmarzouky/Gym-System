@@ -1,0 +1,71 @@
+﻿@model IEnumerable<Gym_System.Models.Coache>
+
+@{
+	ViewData["Title"] = "GOLD GYM";
+}
+
+<div class="visual">
+	<div class="container">
+		<div class="text-block">
+			<div class="heading-holder">
+				<h1>Choose Your Fitness</h1>
+			</div>
+			<p class="tagline">A happier & healthier life is waiting for you!</p>
+			<span class="info">Get motivated now</span>
+		</div>
+	</div>
+	<img src="~/Images/background2.jpg" alt="" class="bg-stretch">
+</div>
+
+<div class="main">
+	<div class="container">
+		<div class="row">
+			<div class="text-box col-md-offset-1 col-md-10">
+				<h2>About GOLD GYM</h2>
+				<p>
+					Trainers, athletes and serious clients alike are looking
+					for the toughest,most brutally productive training techniques to
+					spice up theirworkouts and provide a truly unique challenge for
+					their body and mind. Think: one-arm push-ups, pistols, pull-ups,
+					handstands, hanging levers and the like!
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="text-box col-md-offset-1 col-md-10">
+		<h2>Our Coaches</h2>
+	</div>
+		@foreach (var item in Model)
+		{
+			<div class="d-inline-block">
+
+				<a target="_blank" href="~/Images/@item.ImageUrl">
+					<img src="~/Images/@item.ImageUrl" alt="Cinque Terre" width="350" height="250">
+				</a>
+				<br />
+				<h3 class="text-center " style="color:black">@item.Full_Name</h3>
+				<br/>
+			</div>
+		}
+	</div>
+<footer id="footer">
+	<div class="container">
+		<div class="footer-holder">
+			<div class="row">
+				<div class="col-md-6">
+					<h3>Follow Us On Our Social Media </h3>
+				</div>
+				<div class="col-md-6 text-right">
+					<ul class="social">
+						<li><a  target="_blank" href="https://www.facebook.com/M.Magdy1998"><i class="fa fa-facebook-f"></i></a></li>
+						<li><a  target="_blank" href="https://twitter.com/mahmoud_magdy01"><i class="fa fa-twitter"></i></a></li>
+						<li><a  target="_blank" href="https://www.linkedin.com/in/mahmoud-magdy-60628915a/"><i class="fa fa-linkedin"></i></a></li>
+						<li><a  target="_blank" href="https://github.com/MahmoudElmarzouky"><i class="fa fa-github"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>

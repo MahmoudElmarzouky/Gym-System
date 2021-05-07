@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>@ViewData["Title"]</title>
+	<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+	<link href="~/css/StyleSheet.css" rel="stylesheet" />
+	<link rel="stylesheet" href="~/css/bootstrap.css">
+	<link rel="stylesheet" href="~/fonts/font-awesome-4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="~/css/all.css">
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Source+Sans+Pro:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+	<header id="header">
+		<div class="container">
+			<div class="logo">
+				<a asp-area="" asp-controller="Home" asp-action="Index">
+				<img src="~/Images/goldgym.png" alt="GOLD GYM" width="60" height="60">
+				<span class="text-white font-weight-bold " style="font-size:15px;" >GOLD GYM</span></a>
+			</div>
+			<nav id="nav">
+				<div class="nav-drop">
+				
+					<ul>
+						<li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+						<li>
+							<a asp-area="" asp-controller="Coaches" asp-action="Index">Coaches</a>
+						</li>
+						<li>
+							<a asp-area="" asp-controller="Trainees" asp-action="Index">Trainees</a>
+						</li>
+						<li>
+							<a asp-area="" asp-controller="Games" asp-action="Index">Games</a>
+						</li>
+					</ul>
+					<div class="drop-holder visible-sm visible-xs">
+						<span>Follow Us</span>
+						<ul class="social-networks">
+							<li><a class="fa fa-github" href="#"></a></li>
+							<li><a class="fa fa-twitter" href="#"></a></li>
+							<li><a class="fa fa-facebook" href="#"></a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+
+	</header>
+
+    <div>
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div >
+            &copy; 2021 - Gym_System - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
